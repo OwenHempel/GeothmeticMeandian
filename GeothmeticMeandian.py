@@ -9,11 +9,11 @@ def Gmdn(Sequence, Precision=3):
 		GMDN = [ArithmeticMean(Sequence), GeometricMean(Sequence), Median(Sequence)]
 
 		CheckGMDN = [round(i, Precision)== round(GMDN[0], Precision) for i in GMDN]
-		print(GMDN, CheckGMDN)
 		if CheckGMDN != [True, True, True]:
-			Gmdn(GMDN, Precision=Precision)
+			recur = Gmdn(GMDN, Precision=Precision)
+			return recur
 		else:
-			return GMDN
+			return round(GMDN[0], Precision)
 
 	else:
 		raise TypeError
