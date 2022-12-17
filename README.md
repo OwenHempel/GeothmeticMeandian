@@ -1,6 +1,4 @@
 # GeothmeticMeandian
-https://xkcd.com/2435/
-
 ![I see no flaw in this idea](https://imgs.xkcd.com/comics/geothmetic_meandian.png)
 
 ## Picking a Good Average Can Be Notoriously Difficult.
